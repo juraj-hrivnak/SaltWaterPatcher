@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "teksturepako.saltwaterpatcher.mixins",
+  "minVersion": "0.8",
+  "setSourceFile": true,
+  "priority": 0,
+  "refmap": "mixins.saltwaterpatcher.refmap.json",
+  "mixins": [
+    "MixinBiomeCoralReef",
+    "MixinBlockCoral",
+    "MixinBlockSeaweed"
+  ]
+}

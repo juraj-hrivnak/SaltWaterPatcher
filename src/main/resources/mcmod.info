@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "saltwaterpatcher",
+    "name": "SaltWaterPatcher",
+    "description": "Patches blocks from other mods that use minecraft water to use salt water.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["TeksturePako"],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
