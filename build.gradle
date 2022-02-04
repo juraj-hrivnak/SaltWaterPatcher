@@ -60,6 +60,10 @@ repositories {
 dependencies {
     deobfCompile "curse.maven:mixinbooter-419286:3614716"
     deobfCompile "curse.maven:bop-220318:2842510"
+    compile "curse.maven:aquaacrobatics-321792:3619657"
+    compile "curse.maven:simpledifficulty-360779:3613814"
+    compile "curse.maven:dynamictrees-252818:3613723"
+    compile "curse.maven:dtbop-289529:3268265"
     compile('org.spongepowered:mixin:0.8-SNAPSHOT') {
         exclude module: 'guava'
         exclude module: 'commons-io'
