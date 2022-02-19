@@ -1,7 +1,5 @@
 package teksturepako.saltwaterpatcher.mixins;
 
-import com.charles445.simpledifficulty.SimpleDifficulty;
-import com.charles445.simpledifficulty.api.SDBlocks;
 import com.charles445.simpledifficulty.api.SDFluids;
 import com.ferreusveritas.dynamictrees.api.IPreGenFeature;
 import com.ferreusveritas.dynamictrees.systems.featuregen.FeatureGenMudHole;
@@ -9,7 +7,6 @@ import com.ferreusveritas.dynamictrees.trees.Species;
 import com.ferreusveritas.dynamictrees.util.SafeChunkBounds;
 import com.ferreusveritas.dynamictrees.worldgen.JoCode;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.init.Blocks;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3i;

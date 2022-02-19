@@ -8,11 +8,8 @@
   "refmap": "mixins.saltwaterpatcher.refmap.json",
   "mixins": [
     "MixinBiomeCoralReef",
-    "MixinBlockBubbleColumn",
     "MixinBlockCoral",
-    "MixinBlockRootyWater",
     "MixinBlockSeaweed",
     "MixinFeatureGenMudHole",
-    "MixinModBlocks"
   ]
 }

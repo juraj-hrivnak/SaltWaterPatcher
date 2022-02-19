@@ -2,11 +2,11 @@ package teksturepako.saltwaterpatcher.mixins;
 
 import biomesoplenty.api.block.BOPBlocks;
 import biomesoplenty.api.generation.GeneratorStage;
-import biomesoplenty.common.world.generator.GeneratorFlora.Builder;
 import biomesoplenty.common.biome.overworld.BOPOverworldBiome;
 import biomesoplenty.common.biome.overworld.BiomeGenCoralReef;
 import biomesoplenty.common.block.BlockBOPCoral;
 import biomesoplenty.common.util.biome.GeneratorUtils;
+import biomesoplenty.common.world.generator.GeneratorFlora.Builder;
 import net.minecraft.block.material.Material;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
