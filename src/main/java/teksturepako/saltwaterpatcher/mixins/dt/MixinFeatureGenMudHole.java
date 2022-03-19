@@ -1,4 +1,4 @@
-package teksturepako.saltwaterpatcher.mixins;
+package teksturepako.saltwaterpatcher.mixins.dt;
 
 import com.charles445.simpledifficulty.api.SDFluids;
 import com.ferreusveritas.dynamictrees.api.IPreGenFeature;

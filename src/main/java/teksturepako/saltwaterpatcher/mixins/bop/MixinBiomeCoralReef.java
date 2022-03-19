@@ -1,4 +1,4 @@
-package teksturepako.saltwaterpatcher.mixins;
+package teksturepako.saltwaterpatcher.mixins.bop;
 
 import biomesoplenty.api.block.BOPBlocks;
 import biomesoplenty.api.generation.GeneratorStage;
