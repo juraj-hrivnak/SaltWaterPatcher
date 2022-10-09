@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral()
         maven {
             name = "forge"
             url = "https://files.minecraftforge.net/maven"
@@ -19,8 +19,8 @@ buildscript {
 apply plugin: "net.minecraftforge.gradle.forge"
 apply plugin: 'org.spongepowered.mixin'
 
-group = 'TeksturePako'
-version = '1.2'
+group = 'teksturepako'
+version = '1.3'
 archivesBaseName = 'SaltWaterPatcher'
 
 minecraft {
@@ -55,23 +55,31 @@ repositories {
         name = "sponge"
         url = "https://repo.spongepowered.org/maven"
     }
+    maven {
+        name = "mixinbooter"
+        url = "https://maven.cleanroommc.com"
+    }
 }
 
 dependencies {
-    deobfCompile "curse.maven:mixinbooter-419286:3614716"
-    deobfCompile "curse.maven:bop-220318:2842510"
+    compile "zone.rong:mixinbooter:5.0"
+
     compile "curse.maven:simpledifficulty-360779:3613814"
     compile "curse.maven:dynamictrees-252818:3613723"
     compile "curse.maven:dtbop-289529:3268265"
-    compile('org.spongepowered:mixin:0.8-SNAPSHOT') {
+    deobfCompile "curse.maven:bop-220318:2842510"
+
+    compile("org.spongepowered:mixin:0.8-SNAPSHOT") {
         exclude module: 'guava'
         exclude module: 'commons-io'
         exclude module: 'gson'
     }
 }
 
-mixin {
-    add sourceSets.main, "mixins.saltwaterpatcher.refmap.json"
+sourceSets {
+    main {
+        ext.refMap = "mixins.saltwaterpatcher.refmap.json"
+    }
 }
 
 processResources {
