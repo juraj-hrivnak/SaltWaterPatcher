@@ -1,4 +1,4 @@
-package teksturepako.saltwaterpatcher.mixins.bop;
+package teksturepako.saltwaterpatcher.mixins.late.bop;
 
 import biomesoplenty.common.block.BlockBOPCoral;
 import biomesoplenty.common.block.BlockBOPDecoration;

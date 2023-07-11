@@ -6,12 +6,12 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 
 @Mod(
-    modid = SaltWaterPatcher.MOD_ID,
-    name = SaltWaterPatcher.MOD_NAME,
-    version = SaltWaterPatcher.VERSION,
-    dependencies = SaltWaterPatcher.DEPENDENCIES
+        modid = SWP.MOD_ID,
+        name = SWP.MOD_NAME,
+        version = SWP.VERSION,
+        dependencies = SWP.DEPENDENCIES
 )
-public class SaltWaterPatcher {
+public class SWP {
 
     public static final String MOD_ID = "saltwaterpatcher";
     public static final String MOD_NAME = "SaltWaterPatcher";
@@ -19,12 +19,14 @@ public class SaltWaterPatcher {
     public static final String DEPENDENCIES = "after:biomesoplenty;after:simpledifficulty;after:dynamictreesbop;required-after:mixinbooter";
 
     @Mod.Instance
-    public static SaltWaterPatcher INSTANCE;
+    public static SWP INSTANCE;
 
     @Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event) {}
+    public void preInit(FMLPreInitializationEvent event) {
+    }
 
     @Mod.EventHandler
-    public void onLoadComplete(FMLLoadCompleteEvent event) {}
+    public void onLoadComplete(FMLLoadCompleteEvent event) {
+    }
 
 }

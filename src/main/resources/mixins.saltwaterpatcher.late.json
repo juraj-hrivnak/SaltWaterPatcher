@@ -1,7 +1,7 @@
 {
   "required": true,
   "compatibilityLevel": "JAVA_8",
-  "package": "teksturepako.saltwaterpatcher.mixins",
+  "package": "teksturepako.saltwaterpatcher.mixins.late",
   "minVersion": "0.8",
   "setSourceFile": true,
   "priority": 0,
@@ -13,5 +13,8 @@
     "bop.MixinBlockQuery",
     "bop.MixinBlockSeaweed",
     "dt.MixinFeatureGenMudHole"
-  ]
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }

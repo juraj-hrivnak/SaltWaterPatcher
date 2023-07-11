@@ -1,4 +1,4 @@
-package teksturepako.saltwaterpatcher.mixins.dt;
+package teksturepako.saltwaterpatcher.mixins.late.dt;
 
 import com.charles445.simpledifficulty.api.SDFluids;
 import com.ferreusveritas.dynamictrees.api.IPreGenFeature;
@@ -15,16 +15,10 @@ import org.spongepowered.asm.mixin.Mixin;
 
 @Mixin(FeatureGenMudHole.class)
 public abstract class MixinFeatureGenMudHole implements IPreGenFeature {
-
     protected IBlockState mud;
-
-    public void FeatureGenMudHole(IBlockState mud) {
-        this.mud = mud;
-    }
 
     @Override
     public BlockPos preGeneration(World world, BlockPos rootPos, Species species, int radius, EnumFacing facing, SafeChunkBounds safeBounds, JoCode joCode) {
-
         int seaLevel = world.getSeaLevel() - 1;
 
         IBlockState water = SDFluids.blockPurifiedWater.getDefaultState();
@@ -46,7 +40,6 @@ public abstract class MixinFeatureGenMudHole implements IPreGenFeature {
                 }
             }
         }
-
         return rootPos;
     }
 }

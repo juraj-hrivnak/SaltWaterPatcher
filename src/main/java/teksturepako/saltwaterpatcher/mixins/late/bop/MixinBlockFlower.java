@@ -1,4 +1,4 @@
-package teksturepako.saltwaterpatcher.mixins.bop;
+package teksturepako.saltwaterpatcher.mixins.late.bop;
 
 import biomesoplenty.api.block.BOPBlocks;
 import biomesoplenty.api.enums.BOPFlowers;
@@ -10,7 +10,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Blocks;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.common.IShearable;
@@ -21,7 +20,6 @@ import vazkii.botania.api.item.IHornHarvestable;
 @Optional.Interface(iface = "vazkii.botania.api.item.IHornHarvestable", modid = "botania")
 @Mixin(BlockBOPFlower.class)
 public abstract class MixinBlockFlower extends BlockBOPDecoration implements IShearable, IHornHarvestable {
-
     public IProperty variantProperty;
 
     @Override
@@ -43,7 +41,7 @@ public abstract class MixinBlockFlower extends BlockBOPDecoration implements ISh
         boolean onDriedSand = groundBlock == BOPBlocks.dried_sand;
         boolean onSpectralMoss = false;
         if (groundBlock instanceof BlockBOPGrass) {
-            switch((BlockBOPGrass.BOPGrassType)groundState.getValue(BlockBOPGrass.VARIANT)) {
+            switch ((BlockBOPGrass.BOPGrassType) groundState.getValue(BlockBOPGrass.VARIANT)) {
                 case SPECTRAL_MOSS:
                     onSpectralMoss = true;
                     break;
@@ -63,7 +61,7 @@ public abstract class MixinBlockFlower extends BlockBOPDecoration implements ISh
             }
         }
 
-        switch((BOPFlowers)state.getValue(this.variantProperty)) {
+        switch ((BOPFlowers) state.getValue(this.variantProperty)) {
             case BURNING_BLOSSOM:
                 return onNetherrack;
             case ENDERLOTUS:
