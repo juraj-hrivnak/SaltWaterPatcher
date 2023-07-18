@@ -6,7 +6,7 @@ plugins {
     id 'maven-publish'
     id 'org.jetbrains.gradle.plugin.idea-ext' version '1.1.7'
     id 'eclipse'
-    id 'com.gtnewhorizons.retrofuturagradle' version '1.3.16'
+    id 'com.gtnewhorizons.retrofuturagradle' version '1.3.19'
     id 'com.matthewprenger.cursegradle' version '1.4.0'
 }
 
@@ -92,6 +92,10 @@ repositories {
             includeGroup 'curse.maven'
         }
     }
+    maven {
+        name 'JitPack'
+        url 'https://jitpack.io'
+    }
     mavenLocal() // Must be last for caching to work
 }
 
@@ -103,10 +107,11 @@ dependencies {
         implementation 'zone.rong:mixinbooter:8.3'
     }
 
-    compileOnly rfg.deobf('curse.maven:simpledifficulty-360779:3613814')
-    compileOnly rfg.deobf('curse.maven:dynamictrees-252818:3613723')
-    compileOnly rfg.deobf('curse.maven:dtbop-289529:3268265')
-    compileOnly rfg.deobf('curse.maven:bop-220318:3558882')
+    compileOnly rfg.deobf('curse.maven:SimpleDifficultyForUnderdog-574162:4651150')
+    compileOnly rfg.deobf('com.github.jbredwards:fluidlogged-api:2573e41f3e')
+    compileOnly rfg.deobf('curse.maven:DynamicTrees-252818:3812473')
+    compileOnly rfg.deobf('curse.maven:DynamicTreesBOP-289529:4586993')
+    compileOnly rfg.deobf('curse.maven:BiomesOPlenty-220318:3558882')
 
     if (project.use_mixins.toBoolean()) {
         // Change your mixin refmap name here:
